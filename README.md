@@ -27,3 +27,10 @@ Dependencias importantes del proyecto:
                                                   spring.mvc.view.suffix= .jsp
   
 *****************************************************************
+Añadir imagenes y CSS:
+- crear la ruta: static/css 
+- las imagenes y el archivo .css estara ahi
+- dentro del archivo .jsp añadimos una etiqueta para aplicar el estilo css  <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+- tambien añadimos una etiqueta para imagen  <img src="logo_verde.png" width="30%"/>
+
+*****************************************************************
