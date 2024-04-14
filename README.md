@@ -9,28 +9,18 @@ Hierramientas utilizadas:
 - JSP
 - Mysql
 - Javascript
+-Bootstrap
+*****************************************************************
+Dependencias importantes del proyecto: en el archivo pom.xml
+Configuracion : archivo application.properties
 
 *****************************************************************
-Dependencias importantes del proyecto:
-- Spring Web
-- Spring Boot Dev Tools
-- Mysql Driver
-- Spring Data JPA
-- añadir la dependencia JSP en el pom : <dependency>
-                                          <groupId>org.apache.tomcat.embed</groupId>
-                                          <artifactId>tomcat-embed-jasper</artifactId>
-                                          <scope>provided</scope>
-                                        </dependency>
- -tenemos que crear una ruta de carpetas donde vamos poner los archivos .jsp
-      * src/main/webapp/WEB-INF/views
-      * ahora el application.properties añadimos: spring.mvc.view.prefix= /WEB-INF/views/
-                                                  spring.mvc.view.suffix= .jsp
-  
-*****************************************************************
-Añadir imagenes y CSS:
-- crear la ruta: static/css 
-- las imagenes y el archivo .css estara ahi
-- dentro del archivo .jsp añadimos una etiqueta para aplicar el estilo css   <link href="/css/style.css" rel="stylesheet" type="text/css"/>
-- tambien añadimos una etiqueta para imagen     <img src="logo_verde.png" width="30%"/>
+Añadir imagenes y CSS y video:
+- en la ruta: src/main/resources/static
 
 *****************************************************************
+OJO:
+La evolucion del proyecto, estará separado por carpeta distintas, por ejemplo:
+1º carpeta-->ProyectoClinica    primeros archivos
+2º carpeta-->ProyectoClinica2   primera evolucion del proyecto
+3º carpeta-->ProyectoClinica3   segunda evolucion del proyecto
