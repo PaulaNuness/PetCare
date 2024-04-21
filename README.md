@@ -50,4 +50,16 @@ CREATE TABLE usuarios(
     Sexo VARCHAR(50) NOT NULL,
 	PRIMARY KEY(idUsuario)
 );
+
+CREATE TABLE pacientes(
+	IdPaciente int NOT NULL AUTO_INCREMENT,
+	NombreMascota VARCHAR(50) NOT NULL,
+    Raza VARCHAR(50) NOT NULL,
+    Edad int NOT NULL,
+    Sexo VARCHAR(50) NOT NULL,
+	NombreTutor VARCHAR(50) NOT NULL,
+	DNITutor VARCHAR(9) NOT NULL,
+	UbicacionMascota VARCHAR(50) NOT NULL,
+	PRIMARY KEY(IdPaciente)
+);
 *****************************************************************
