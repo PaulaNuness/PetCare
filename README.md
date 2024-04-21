@@ -35,3 +35,19 @@ En la vista usuario.jsp donde hago el registro(insertar) un nuevo usuario estoy 
 - el campo Usaurio es un correo(que sera usado para entrar en la aplicacion), debe tener como mucho 22 caracteres, tener solo letras y numeros, y es obligatorio terminar en @hotmail.com
 - la contrasena debe tener como mucho 10 caracteres, poruqe estoy codificando para poner en la base de datos.
 *****************************************************************
+La base de datos:
+DROP DATABASE IF EXISTS ClinicaPetCare;
+CREATE DATABASE IF NOT EXISTS ClinicaPetCare;
+USE ClinicaPetCare;
+
+CREATE TABLE usuarios(
+	IdUsuario int NOT NULL AUTO_INCREMENT,
+	Nombre VARCHAR(50) NOT NULL,
+	Apellido VARCHAR(50) NOT NULL,
+	Email VARCHAR(50) NOT NULL,
+	Contrasena VARCHAR(500) NOT NULL,
+    Pais VARCHAR(50) NOT NULL,
+    Sexo VARCHAR(50) NOT NULL,
+	PRIMARY KEY(idUsuario)
+);
+*****************************************************************
