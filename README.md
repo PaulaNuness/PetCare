@@ -24,3 +24,14 @@ La evolucion del proyecto, estará separado por carpeta distintas, por ejemplo:
 1º carpeta-->ProyectoClinica    primeros archivos
 2º carpeta-->ProyectoClinica2   primera evolucion del proyecto
 3º carpeta-->ProyectoClinica3   segunda evolucion del proyecto
+*****************************************************************
+Puse en la carpeta test, unas pruebas unitarias
+Para ejecutar:
+- por ejemplo,UsuarioControlerTest:
+  - boton derecho en la clase, pulsar la opcion(Debug as), despues pulsar JUnit Test
+*****************************************************************
+En la vista usuario.jsp donde hago el registro(insertar) un nuevo usuario estoy controlando que:
+- los campos no puedan estar vacios
+- el campo Usaurio es un correo(que sera usado para entrar en la aplicacion), debe tener como mucho 22 caracteres, tener solo letras y numeros, y es obligatorio terminar en @hotmail.com
+- la contrasena debe tener como mucho 10 caracteres, poruqe estoy codificando para poner en la base de datos.
+*****************************************************************
