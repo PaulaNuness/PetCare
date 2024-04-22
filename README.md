@@ -46,20 +46,31 @@ CREATE TABLE usuarios(
 	Apellido VARCHAR(50) NOT NULL,
 	Email VARCHAR(50) NOT NULL,
 	Contrasena VARCHAR(500) NOT NULL,
-    Pais VARCHAR(50) NOT NULL,
-    Sexo VARCHAR(50) NOT NULL,
+    	Pais VARCHAR(50) NOT NULL,
+    	Sexo VARCHAR(50) NOT NULL,
 	PRIMARY KEY(idUsuario)
 );
-
+INSERT INTO usuarios VALUES
+                      (1, 'Paula', 'Nunes', 'paula@hotmail.com', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 'Brazil', 'mujer'),
+                      (2, 'Camila', 'Ranzani', 'camila@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Italia', 'mujer'),
+                      (3, 'Sonia', 'Aparecida', 'sonia@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Francia', 'mujer'),
+                      (4, 'Selmo', 'Costa', 'selmo@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Portugal','hombre'),
+                      (5, 'Solange', 'Ranzani', 'solange@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Brazil', 'mujer'),
+                      (6, 'Laura', 'Lopez', 'laura@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Espana', 'mujer'),
+                      (7, 'Roberto', 'Silva', 'roberto@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Italia','hombre'),
+                      (8, 'Alvaro', 'Souza', 'alvaro@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Francia','hombre'),
+                      (9, 'Sergio', 'Cruz', 'sergio@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Espana','hombre');
+                      
 CREATE TABLE pacientes(
 	IdPaciente int NOT NULL AUTO_INCREMENT,
 	NombreMascota VARCHAR(50) NOT NULL,
-    Raza VARCHAR(50) NOT NULL,
-    Edad int NOT NULL,
-    Sexo VARCHAR(50) NOT NULL,
+    	Raza VARCHAR(50) NOT NULL,
+    	Edad int NOT NULL,
+    	Sexo VARCHAR(50) NOT NULL,
 	NombreTutor VARCHAR(50) NOT NULL,
 	DNITutor VARCHAR(9) NOT NULL,
 	UbicacionMascota VARCHAR(50) NOT NULL,
 	PRIMARY KEY(IdPaciente)
 );
+
 *****************************************************************
