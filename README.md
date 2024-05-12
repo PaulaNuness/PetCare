@@ -46,47 +46,54 @@ CREATE TABLE usuarios(
 	Apellido VARCHAR(50) NOT NULL,
 	Email VARCHAR(50) NOT NULL,
 	Contrasena VARCHAR(500) NOT NULL,
-    	Pais VARCHAR(50) NOT NULL,
-    	Sexo VARCHAR(50) NOT NULL,
-    	DNI varchar(9),
-    	Telefono varchar(9),
-    	EsADM boolean DEFAULT false,
-    	EstaActivo boolean DEFAULT true,
+    Pais VARCHAR(50) NOT NULL,
+    Sexo VARCHAR(50) NOT NULL,
+    DNI varchar(9),
+    Telefono varchar(9),
+    EsAdmin boolean DEFAULT false,
+    EstaActivo boolean DEFAULT true,
 	PRIMARY KEY(idUsuario)
 );
-
-INSERT INTO usuarios 
-VALUES (1, 'Paula', 'Nunes', 'paula@hotmail.com', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 'Brazil', 'mujer','38276789P','638564773',1,1),
-        (2, 'Camila', 'Ranzani', 'camila@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Italia', 'mujer','78654325L','654278991',0,1),
-        (3, 'Sonia', 'Aparecida', 'sonia@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Francia', 'mujer','76543289J','657453213',0,1),
-        (4, 'Selmo', 'Costa', 'selmo@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Portugal','hombre','78643206G','675432987',0,1),
-        (5, 'Solange', 'Ranzani', 'solange@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Brazil', 'mujer','56432876H','675489345',0,1),
-        (6, 'Laura', 'Lopez', 'laura@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Espana', 'mujer','67543298B','675435987',0,1),
-        (7, 'Roberto', 'Silva', 'roberto@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Italia','hombre','43276541R','675456281',0,1),
-        (8, 'Alvaro', 'Souza', 'alvaro@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Francia','hombre','89765432E','675981223',0,1),
-        (9, 'Sergio', 'Cruz', 'sergio@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Espana','hombre','56281946S','675349887',0,1);
+INSERT INTO usuarios VALUES
+                      (1, 'Paula', 'Nunes', 'paula@hotmail.com', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 'Brazil', 'mujer','38276789P','638564773',1,1),
+                      (2, 'Camila', 'Ranzani', 'camila@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Italia', 'mujer','78654325L','654278991',0,1),
+                      (3, 'Sonia', 'Aparecida', 'sonia@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Francia', 'mujer','76543289J','657453213',0,1),
+                      (4, 'Selmo', 'Costa', 'selmo@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Portugal','hombre','78643206G','675432987',0,1),
+                      (5, 'Solange', 'Ranzani', 'solange@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Brazil', 'mujer','56432876H','675489345',0,1),
+                      (6, 'Laura', 'Lopez', 'laura@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Espana', 'mujer','67543298B','675435987',0,1),
+                      (7, 'Roberto', 'Silva', 'roberto@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Italia','hombre','43276541R','675456281',0,1),
+                      (8, 'Alvaro', 'Souza', 'alvaro@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Francia','hombre','89765432E','675981223',0,1),
+                      (9, 'Sergio', 'Cruz', 'sergio@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Espana','hombre','56281946S','675349887',0,1);
                       
 CREATE TABLE pacientes(
-	IdPaciente int NOT NULL AUTO_INCREMENT,
+	IdChip int NOT NULL ,
 	NombreMascota VARCHAR(50) NOT NULL,
-    	Edad int NOT NULL,
+    Edad int NOT NULL,
 	NombreTutor VARCHAR(50) NOT NULL,
 	DNITutor VARCHAR(9) NOT NULL,
 	UbicacionMascota VARCHAR(50) NOT NULL,
-	PRIMARY KEY(IdPaciente)
+    EstaActivo boolean DEFAULT true,
+	PRIMARY KEY(IdChip)
 );
 INSERT INTO pacientes VALUES
-                      (1, 'Mel', 5, 'Paulinha', '12345678P', 'Calle Galana,54'),
-                      (2, 'Toto', 6, 'Juan','22998811J','Paseo Zorrilla,12'),
-                      (3, 'Mial', 8, 'Carmen','87654321C','Plaza España,34'),
-                      (4, 'Jorge', 1, 'Maria','37261839J','Plaza Madrid,26'),
-                      (5, 'Samuka', 3, 'Juana','78462748S','Av.Zamora,7'),
-                      (6, 'Titi', 4, 'Beatriz','11111882T','Av.Salamanca,8'),
-                      (7, 'Roberto', 2, 'Cris','627348i7R','Av.Segovia,12');
+                      (11111, 'Mel', 5, 'Paulinha', '12345678P', 'Calle Galana,54',1),
+                      (22222, 'Toto', 6, 'Juan','22998811J','Paseo Zorrilla,12',1),
+                      (33333, 'Mial', 8, 'Carmen','87654321C','Plaza España,34',1),
+                      (44444, 'Jorge', 1, 'Maria','37261839J','Plaza Madrid,26',1),
+                      (55555, 'Samuka', 3, 'Juana','78462748S','Av.Zamora,7',1),
+                      (66666, 'Titi', 4, 'Beatriz','11111882T','Av.Salamanca,8',1),
+                      (77777, 'Tiko', 2, 'Cris','62734827R','Av.Segovia,12',1);
                      
 CREATE TABLE consultas(
 	IdPaciente int NOT NULL ,
     IdUsuario int NOT NULL,
 	DescricionConsulta VARCHAR(500) NOT NULL
+);
+                     
+CREATE TABLE consultas(
+	IdPaciente int NOT NULL ,
+    IdUsuario int NOT NULL,
+	DescricionConsulta VARCHAR(500) NOT NULL
+ *****************************************************************
 );
 *****************************************************************
