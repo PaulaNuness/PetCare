@@ -66,34 +66,28 @@ INSERT INTO usuarios VALUES
                       (9, 'Sergio', 'Cruz', 'sergio@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Espana','hombre','56281946S','675349887',0,1);
                       
 CREATE TABLE pacientes(
-	IdChip int NOT NULL ,
+	IdPaciente int NOT NULL AUTO_INCREMENT,
+	NumeroChip int NOT NULL ,
 	NombreMascota VARCHAR(50) NOT NULL,
     Edad int NOT NULL,
 	NombreTutor VARCHAR(50) NOT NULL,
 	DNITutor VARCHAR(9) NOT NULL,
 	UbicacionMascota VARCHAR(50) NOT NULL,
     EstaActivo boolean DEFAULT true,
-	PRIMARY KEY(IdChip)
+	PRIMARY KEY(IdPaciente)
 );
 INSERT INTO pacientes VALUES
-                      (11111, 'Mel', 5, 'Paulinha', '12345678P', 'Calle Galana,54',1),
-                      (22222, 'Toto', 6, 'Juan','22998811J','Paseo Zorrilla,12',1),
-                      (33333, 'Mial', 8, 'Carmen','87654321C','Plaza España,34',1),
-                      (44444, 'Jorge', 1, 'Maria','37261839J','Plaza Madrid,26',1),
-                      (55555, 'Samuka', 3, 'Juana','78462748S','Av.Zamora,7',1),
-                      (66666, 'Titi', 4, 'Beatriz','11111882T','Av.Salamanca,8',1),
-                      (77777, 'Tiko', 2, 'Cris','62734827R','Av.Segovia,12',1);
+                      (1,48596, 'Mel', 5, 'Paulinha', '12345678P', 'Calle Galana,54',1),
+                      (2,38495, 'Toto', 6, 'Juan','22998811J','Paseo Zorrilla,12',1),
+                      (3,39475, 'Mial', 8, 'Carmen','87654321C','Plaza España,34',1),
+                      (4,20495, 'Jorge', 1, 'Maria','37261839J','Plaza Madrid,26',1),
+                      (5,48379, 'Samuka', 3, 'Juana','78462748S','Av.Zamora,7',1),
+                      (6,18493, 'Titi', 4, 'Beatriz','11111882T','Av.Salamanca,8',1),
+                      (7,19384, 'Tiko', 2, 'Cris','62734827R','Av.Segovia,12',1);
                      
 CREATE TABLE consultas(
 	IdPaciente int NOT NULL ,
     IdUsuario int NOT NULL,
 	DescricionConsulta VARCHAR(500) NOT NULL
-);
-                     
-CREATE TABLE consultas(
-	IdPaciente int NOT NULL ,
-    IdUsuario int NOT NULL,
-	DescricionConsulta VARCHAR(500) NOT NULL
- *****************************************************************
 );
 *****************************************************************
