@@ -36,13 +36,12 @@ En la vista usuario.jsp donde hago el registro(insertar) un nuevo usuario estoy 
 - la contrasena debe tener como mucho 10 caracteres, poruqe estoy codificando para poner en la base de datos.
 *****************************************************************
 La base de datos:
-/***********************************************************************************************************/
 
 DROP DATABASE IF EXISTS ClinicaPetCare;
 CREATE DATABASE IF NOT EXISTS ClinicaPetCare;
 USE ClinicaPetCare;
 
-CREATE TABLE usuarios(
+CREATE TABLE IF NOT EXISTS usuarios(
 	IdUsuario int NOT NULL AUTO_INCREMENT,
 	Nombre VARCHAR(50) NOT NULL,
 	Apellido VARCHAR(50) NOT NULL,
@@ -67,7 +66,7 @@ INSERT INTO usuarios VALUES
                       (8, 'Alvaro', 'Souza', 'alvaro@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Francia','hombre','89765432E','675981223',0,1),
                       (9, 'Sergio', 'Cruz', 'sergio@hotmail.com','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Espana','hombre','56281946S','675349887',0,1);
                       
-CREATE TABLE pacientes(
+CREATE TABLE IF NOT EXISTS pacientes(
 	IdPaciente int NOT NULL AUTO_INCREMENT,
 	NumeroChip int NOT NULL ,
 	NombreMascota VARCHAR(50) NOT NULL,
