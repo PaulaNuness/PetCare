@@ -36,7 +36,6 @@ En la vista usuario.jsp donde hago el registro(insertar) un nuevo usuario estoy 
 - la contrasena debe tener como mucho 10 caracteres, poruqe estoy codificando para poner en la base de datos.
 *****************************************************************
 La base de datos:
-/***********************************************************************************************************/
 
 DROP DATABASE IF EXISTS ClinicaPetCare;
 CREATE DATABASE IF NOT EXISTS ClinicaPetCare;
@@ -108,13 +107,13 @@ CREATE TABLE IF NOT EXISTS consultas (
 );
 
 INSERT INTO consultas VALUES
-(1, 3,5, '2024-05-01', '10:00', 'Consulta sobre dolor de cabeza'),
-(2, 7,3, '2024-05-02', '11:00', 'Consulta sobre dolor de estómago'),
-(3, 2,6, '2024-05-03', '12:00', 'Consulta sobre problemas de visión'),
-(4, 5,4, '2024-05-04', '13:00', 'Consulta sobre dolor de espalda'),
-(5, 8, 2,'2024-05-05', '14:00', 'Consulta sobre alergias'),
-(6, 8,1, '2024-05-06', '15:00', 'Consulta sobre resfriado'),
-(7, 6, 7,'2024-05-07', '16:00', 'Consulta sobre fiebre');
+(1, 3,5, '2024-05-01', '10:00', 'Consulta vacuna'),
+(2, 7,3, '2024-05-02', '11:00', 'Consulta retorno'),
+(3, 2,6, '2024-05-03', '12:00', 'Consulta alergia'),
+(4, 5,4, '2024-05-04', '13:00', 'Consulta dolor oido'),
+(5, 8, 2,'2024-05-05', '14:00', 'Consulta vacuna'),
+(6, 8,1, '2024-05-06', '15:00', 'Consulta fiebre'),
+(7, 6, 7,'2024-05-07', '16:00', 'Consulta retorno');
 
 CREATE TABLE IF NOT EXISTS inventario (
     IdInventario INT NOT NULL AUTO_INCREMENT,
