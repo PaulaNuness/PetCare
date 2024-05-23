@@ -134,6 +134,12 @@ La memoria esta en el PDF llamado Nunes_Ranzani_Paula_ProyectoFinal_DAM24, el ma
 El proyecto final es el zip llamado Nunes_Ranzani_Paula_ProyectoFinal_DAM24
 El archivo .sql es la base de datos
 
+# PetCare
+
 ## Links para Download
+
+- [Baixar arquivo ZIP](https://github.com/PaulaNuness/PetCare/blob/main/Nunes_Ranzani_Paula_ProyectoFinal_DAM24.zip)
+- [Baixar PDF](https://github.com/PaulaNuness/PetCare/blob/main/Nunes_Ranzani_Paula_Memoria_ProyectoFinal_DAM24.pdf)
+
 
 /***********************************************************************************************************/
