@@ -131,4 +131,4 @@ INSERT INTO inventario VALUES
 (7, 'Analgesico Vet', 'Oral');
 /***********************************************************************************************************/
 La memoria esta en el PDF llamado ClinicaPETCARE, el manual del usuario está en la memoria.
-El proyecto final es el zip llamado Proyecto15
+El proyecto final es el zip llamado Proyecto_Clinica15
