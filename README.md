@@ -132,3 +132,5 @@ INSERT INTO inventario VALUES
 /***********************************************************************************************************/
 La memoria esta en el PDF llamado ClinicaPETCARE, el manual del usuario está en la memoria.
 El proyecto final es el zip llamado Proyecto_Clinica15
+El archivo .sql es la base de datos
+/***********************************************************************************************************/
