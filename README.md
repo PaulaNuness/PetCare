@@ -133,4 +133,7 @@ INSERT INTO inventario VALUES
 La memoria esta en el PDF llamado Nunes_Ranzani_Paula_ProyectoFinal_DAM24, el manual del usuario está en la memoria.
 El proyecto final es el zip llamado Nunes_Ranzani_Paula_ProyectoFinal_DAM24
 El archivo .sql es la base de datos
+
+## Links para Download
+
 /***********************************************************************************************************/
