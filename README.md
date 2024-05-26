@@ -47,5 +47,6 @@ El archivo .sql es la base de datos
 - [Baixar arquivo ZIP](https://github.com/PaulaNuness/PetCare/blob/main/Nunes_Ranzani_Paula_ProyectoFinal_DAM24.zip)
 - [Baixar PDF](https://github.com/PaulaNuness/PetCare/blob/main/Nunes_Ranzani_Paula_Memoria_ProyectoFinal_DAM24.pdf)
 - [ClinicaPetCare.sql](https://github.com/PaulaNuness/PetCare/blob/main/ClinicaPetCare.sql)
+- [Presentación Power Point](https://github.com/PaulaNuness/PetCare/blob/main/ClinicaPetCare.pptx)
 
 /***********************************************************************************************************/
